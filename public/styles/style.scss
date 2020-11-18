@@ -1,0 +1,94 @@
+html {
+    font-size: 62,5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Lobster Two', cursive;
+    font-weight: lighter;
+}
+h2 {
+    font-size: 4rem;
+    font-family: 'Lobster Two', cursive;
+    font-weight: lighter;
+}
+h3 {
+    font-size: 3.5rem;
+}
+h4 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.5rem;
+}
+li {
+    font-size: 2rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+@import 'home';
+@import 'projects';
+@import 'contact';
+@import 'footer';
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+    
+    nav {
+        #logo {
+            flex: 1;
+        }
+        ul {
+            li {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+    .showcase {
+        grid-template-columns: 10% 1fr 10%;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+        img, h2, .info {
+            grid-column: 2/3;
+            text-align: center;
+        }
+    }
+    .projects {
+        align-items: center;
+        h2 {
+            margin-top: 5rem;
+            //puede que haya que darle menos margin
+        }
+        .cards {
+            flex-direction: column;
+            width: 35%;
+            overflow: hidden;
+            .card {
+                margin: 5rem 0rem;
+                
+            }
+        }
+    }
+    .contacts {
+        align-items: center;
+        h2 {
+            margin-top: 1rem;
+            //puede que haya que darle menos margin
+        }
+    }
+}

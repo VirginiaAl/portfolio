@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" type='text/css'>
+    <title>Virginia Alvarez</title>
+</head>
+<body>
+    <main>
+        <div class="nav-container">
+            <button id="myBtn" class='btn'>Top</button>
+            <nav>
+                <h1 id='logo'>Vir</h1>
+                <ul>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a class='contact' href="#contacts">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="home">
+            <div class="showcase">
+                <h2>Sobre mi</h2>
+                <img src="./img/IMG-20180805-WA0005.jpg" alt="myPic" style='width: 500px; height:300px;'>
+                <div class="info">
+                    <h3>Así soy yo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Ea expedita laudantium fuga omnis aliquam commodi.</p>
+                </div>
+            </div>
+        </section>
+            <div class="projects-container">
+                <section class='projects' id='projects'>
+                    <h2>Proyectos</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./img/html-css-js.png" alt="html, css, js" style='width: 300px; height: 200px;'>
+                            <h4>HTML | CSS | JS</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div class="card">
+                            <img src="./img/mean.png" alt="MEAN" style='width: 300px; height: 200px;'>
+                            <h4>MONGO | EXPRESS | ANGULAR | NODE</h4>
+                            <p>Lorem ipsum dolor sit Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="card">
+                            <img src="./img/mern.png" alt="MERN" style='width: 300px; height: 200px;'>
+                            <h4>MONGO | EXPRESS | REACT | NODE</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </section>
+             </div>
+             <div class="contacts-container">
+                <section class='contacts' id='contacts'>
+                    <h2>Contacto</h2>
+                    <form action="/" method="post">
+                    <div class="email-contacts">
+                        
+                            <label for="email "></label>
+                            <input type="email" name="email" class="email" id="email" placeholder='Introduzca su e-mail aquí' required>
+                        
+                            <label for="text"></label>
+                            <textarea name="message" id="text" class="text" rows="4" cols="50" placeholder='Escriba aquí en qué puedo ayudarle'></textarea>
+                        
+                            <input type="submit" value="Enviar" class="btn">
+                        
+                    </div>
+                    </form>
+                </section>
+                <img class='wave' src="./img/wave.png" alt="">
+             </div>
+             <footer>
+                 <h1>Lorem, ipsum dolor.</h1>
+                 <ul>
+                     <li>
+                         <a href="#"><img src="./img/GitHub-Mark-120px-plus.png" alt="GitHub-Mark-120px-plus"></a>
+                     </li>
+                     <li>
+                         <a href="#"><img src="./img/GitHub-Mark-Light-120px-plus.png" alt="GitHub-Mark-Light-120px-plus"></a>
+                     </li>
+                     <li>
+                         <a href="#"><img src="./img/twitter-logo.png" alt="twitter-logo"></a>
+                     </li>
+                 </ul>
+             </footer>
+    </main>
+    <script>
+        const btn =document.querySelector('.btn')
+        function showButton() {
+            window.scrollY > 400 ? btn.style.display='block' : btn.style.display='none'  
+        }
+        function upButton() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        window.addEventListener('scroll', showButton)
+        btn.addEventListener('click', upButton)
+    </script>
+</body>
+</html>
