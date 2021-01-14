@@ -34,6 +34,14 @@ nav {
         justify-content: space-between;
         flex: 2;
         list-style: none;
+        .lalo{
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            &:hover{
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+                transform: translateY(4px);
+        }
+    }
     }
     #logo {
         flex: 3;

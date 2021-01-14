@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css" type='text/css'>
     <title>Virginia Alvarez</title>
 </head>
@@ -14,8 +16,8 @@
             <nav>
                 <h1 id='logo'>Vir</h1>
                 <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a class='contact' href="#contacts">Contact</a></li>
+                    <li class="lalo"><a href="#projects">Projects</a></li>
+                    <li class="lalo"><a class='contact' href="#contacts">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,19 +36,34 @@
                     <h2>Some Projects</h2>
                     <div class="cards">
                         <div class="card">
-                            <img src="./img/html-css-js.png" alt="html, css, js" style='width: 300px; height: 200px;'>
-                            <h4>HTML | CSS | JS</h4>
-                            <p>some projects.</p>
+                            <img src="./img/notes.png" alt="node, express, mongoDB" style='width: 300px; height: 200px;'>
+                            <h4>NODE | EXPRESS | MONGODB</h4>
+                            <p>A simple <em>create your notes</em> project.</p>
+                            <div class="social-logos">
+                                <a href="https://notes-v.herokuapp.com/" target="_blank"><img src="./img/heroku-logotype-vertical-purple.png" alt="Heroku" style='width: 50px; height: 50px;'></a>
+                                <span class="material-icons">keyboard_arrow_left</span>click to see<span class="material-icons">keyboard_arrow_right</span>
+                                <a href="https://github.com/VirginiaAl/notes" target="_blank"><img src="./img/GitHub-Mark-32px.png" alt="GitHub" ></a>
+                            </div>
                         </div>
                         <div class="card">
-                            <img src="./img/mean.png" alt="MEAN" style='width: 300px; height: 200px;'>
-                            <h4>MONGO | EXPRESS | ANGULAR | NODE</h4>
-                            <p>some projects.</p>
+                            <img src="./img/chat.png" alt="MEAN" style='width: 300px; height: 200px;'>
+                            <h4>REACT | NODE | EXPRESS</h4>
+                            <p>A realtime chat with socket.io.</p>
+                            <div class="social-logos">
+                                <a href="https://chat-vi.netlify.app" target="_blank"><img src="./img/heroku-logotype-vertical-purple.png" alt="Heroku" style='width: 50px; height: 50px;'></a>
+                                <span class="material-icons">keyboard_arrow_left</span>click to see<span class="material-icons">keyboard_arrow_right</span>
+                                <a href="https://github.com/VirginiaAl/chat" target="_blank"><img src="./img/GitHub-Mark-32px.png" alt="GitHub" ></a>
+                            </div>
                         </div>
                         <div class="card">
                             <img src="./img/mern.png" alt="MERN" style='width: 300px; height: 200px;'>
-                            <h4>MONGO | EXPRESS | REACT | NODE</h4>
+                            <h4>ANGULAR | EXPRESS | MONGODB | NODE</h4>
                             <p>some projects</p>
+                            <div class="social-logos">
+                                <a href=" https://compartiendo-desarrollo.herokuapp.com" target="_blank"><img src="./img/heroku-logotype-vertical-purple.png" alt="Heroku" style='width: 50px; height: 50px;'></a>
+                                <span class="material-icons">keyboard_arrow_left</span>click to see<span class="material-icons">keyboard_arrow_right</span>
+                                <a href="https://github.com/VirginiaAl/chat" target="_blank"><img src="./img/GitHub-Mark-32px.png" alt="GitHub" ></a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -58,12 +75,12 @@
                     <div class="email-contacts">
                         
                             <label for="email "></label>
-                            <input type="email" name="email" class="email" id="email" placeholder='Introduzca su e-mail aquí/ enter your e-mail please' required>
+                            <input type="email" name="email" class="email" id="email" placeholder='enter your e-mail please' required>
                         
                             <label for="text"></label>
-                            <textarea name="message" id="text" class="text" rows="4" cols="50" placeholder='Escriba aquí su mensaje / Leave your message'></textarea>
+                            <textarea name="message" id="text" class="text" rows="4" cols="50" placeholder='Leave your message'></textarea>
                         
-                            <input type="submit" value="Enviar" class="btn">
+                            <input type="submit" value="Send" class="btn">
                         
                     </div>
                     </form>
